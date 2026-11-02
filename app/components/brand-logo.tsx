@@ -11,8 +11,8 @@ export default function BrandLogo() {
         className="brand-symbol"
       />
       <span className="brand-type">
-        <span className="brand-name">HYUNJU<span className="brand-period">.</span></span>
-        <span className="brand-descriptor">안전교육 · AI 활용</span>
+        <span className="brand-name">세이프마인드</span>
+        <span className="brand-descriptor">안전교육 · AI 활용교육</span>
       </span>
     </span>
   );

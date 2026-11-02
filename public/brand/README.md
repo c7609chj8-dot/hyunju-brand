@@ -1,4 +1,8 @@
-# HYUNJU 안전교육 · AI 활용 로고
+# 세이프마인드 브랜드 로고
+
+- 현재 브랜드명: 세이프마인드.
+- 최신 로고: [전화번호 없는 세이프마인드 로고](./safemind-logo.png), [제작 설명·프롬프트](./safemind-logo.md).
+- 아래 HYUNJU 로고는 이전 시안 기록이다.
 
 - 최신 통합 이미지 로고: [v2 이미지](./hyunju-safety-ai-integrated-v2.png), [제작 설명·프롬프트](./integrated-logo-v2.md). 안전·교육·AI를 하나의 심벌로 통합하고 브랜드명·전화번호를 포함한다.
 

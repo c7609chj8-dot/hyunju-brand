@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "HYUNJU — 안전교육 · AI 활용",
-  description: "현주의 안전교육·AI 활용 개인브랜딩 공간입니다. 강의·협업 문의는 010-7259-2558로 연락해 주세요.",
+  title: "세이프마인드 — 안전교육 · AI 활용교육",
+  description: "세이프마인드의 안전교육·AI 활용교육을 소개합니다. 강의·협업 문의는 010-7259-2558로 연락해 주세요.",
   robots: { index: false, follow: false },
 };
 

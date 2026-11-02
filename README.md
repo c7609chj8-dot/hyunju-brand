@@ -1,4 +1,4 @@
-# HYUNJU 개인브랜딩 홈페이지
+# 세이프마인드 홈페이지
 
 Next.js + TypeScript로 만든 반응형 한 페이지 프런트엔드 초안입니다.
 
@@ -25,6 +25,9 @@ npm start
 - 키보드 포커스, 본문 바로가기, 모션 감소 설정 지원
 
 ## 브랜드 로고와 연락처
+
+- 확정 브랜드명: 세이프마인드. 최신 이미지 로고는 `public/brand/safemind-logo.png`이며 전화번호를 포함하지 않는다.
+- [세이프마인드 로고 제작 설명·프롬프트](./public/brand/safemind-logo.md)
 
 - `public/brand/hyunju-safety-ai-symbol.png`: 안전·교육·AI 연결을 표현하는 투명 PNG 심벌.
 - `app/components/brand-logo.tsx`: 심벌과 HYUNJU, 안전교육·AI 활용 문구를 조합한 웹 로고.
