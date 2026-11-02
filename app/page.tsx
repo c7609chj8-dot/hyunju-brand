@@ -1,12 +1,13 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
+import Image from "next/image";
 import BrandLogo from "./components/brand-logo";
 
 const projects = [
-  { id: "brand", number: "01", category: "BRAND STRATEGY", title: "나다운 방향을 찾는 일", description: "브랜드의 질문에서 시작해, 하나의 메시지로 정리하는 과정.", theme: "sage", word: "Clarity.", detail: "실제 프로젝트로 교체할 예시입니다. 프로젝트의 배경, 해결한 문제, 본인의 역할, 결과를 순서대로 소개하면 좋습니다." },
-  { id: "content", number: "02", category: "CONTENT & STORY", title: "생각을 이야기로 만드는 일", description: "작은 관찰을 모아, 오래 기억되는 콘텐츠로 연결하기.", theme: "sand", word: "Perspective.", detail: "콘텐츠 사례를 소개할 자리입니다. 기획 의도와 독자, 제작 과정, 확인 가능한 반응을 실제 자료로 채워 주세요." },
-  { id: "experience", number: "03", category: "EXPERIENCE DESIGN", title: "경험에 의미를 더하는 일", description: "사람의 입장에서 질문하고, 더 나은 접점을 설계하기.", theme: "blue", word: "Connection.", detail: "협업 또는 경험 설계 사례를 소개할 자리입니다. 담당 범위와 협업 과정, 최종 산출물을 중심으로 작성해 주세요." },
+  { id: "safety", category: "SAFETY EDUCATION", title: "생활·교통안전교육", description: "교실에서 함께 배우는 안전. 교육 현장의 일부를 담았습니다.", image: "/images/band/safety-classroom-crop.jpg", alt: "안전교육 현장의 책상과 주황색 의자, 학습자의 뒷모습 일부", detail: "제공받은 BAND의 교통안전교육 기록에서 선별한 사진입니다. 얼굴이 포함된 영역을 제외한 교육장 장면입니다. 교육과정의 법정 인정이나 자격을 의미하지 않습니다." },
+  { id: "ai", category: "AI EDUCATION", title: "AI 활용 실습교육", description: "노트북과 필기 도구를 준비하고, 직접 익혀가는 AI 활용.", image: "/images/band/ai-practice-crop.jpg", alt: "AI 활용교육 중 노트북을 앞에 두고 필기하는 학습자의 손과 뒷모습 일부", detail: "제공받은 BAND의 AI 활용 강의 기록에서 선별한 실습 장면입니다. 노트북과 필기 도구를 중심으로, 얼굴이 보이지 않는 일부 영역만 표시합니다." },
+  { id: "materials", category: "LEARNING MATERIALS", title: "실습과 함께하는 배움", description: "화면과 교재를 함께 살피며, 배운 내용을 하나씩 기록합니다.", image: "/images/band/ai-materials-crop.jpg", alt: "AI 강의 현장의 노트북과 교재, 마우스와 필기 도구", detail: "AI 활용 강의 사진에서 교육 자료와 실습 장비가 보이는 부분을 선별했습니다. 동일한 강의 기록의 다른 장면으로, 별도 교육 실적으로 중복 집계하지 않습니다." },
 ];
 
 export default function Home() {
@@ -60,16 +61,15 @@ export default function Home() {
         </section>
 
         <section id="work" className="work section-shell">
-          <div className="section-label"><span>02 / SELECTED WORK</span><span>경험을 담는 방식</span></div>
-          <div className="section-heading"><h2>생각이 작업이 되는 순간.</h2><p>실제 사례를 채워갈 포트폴리오 예시입니다.</p></div>
+          <div className="section-label"><span>02 / LEARNING IN PRACTICE</span><span>교육 현장의 기록</span></div>
+          <div className="section-heading"><h2>안전과 AI를 배우는 현장.</h2><p>제공받은 현장 사진의 일부 영역을 편집했습니다.</p></div>
           <div className="project-grid">{projects.map(project => <article className="project" key={project.id}>
-            <button className={`project-art ${project.theme}`} aria-label={`${project.title} 예시 상세 ${openedProject === project.id ? "닫기" : "보기"}`} aria-expanded={openedProject === project.id} aria-controls={`detail-${project.id}`} onClick={() => setOpenedProject(openedProject === project.id ? null : project.id)}>
-              <span className="project-art-top">CONCEPT STUDY <span>{project.number}</span></span>
-              <span className="project-art-word">{project.word}</span><span className="project-art-circle" /><span className="project-art-line" />
-              <span className="project-art-bottom">HYUNJU / PORTFOLIO TEMPLATE <span className="round-arrow" aria-hidden="true">↗</span></span>
+            <button className="project-art project-photo" aria-label={`${project.title} 상세 ${openedProject === project.id ? "닫기" : "보기"}`} aria-expanded={openedProject === project.id} aria-controls={`detail-${project.id}`} onClick={() => setOpenedProject(openedProject === project.id ? null : project.id)}>
+              <Image src={project.image} alt={project.alt} fill sizes="(max-width: 700px) calc(100vw - 48px), 30vw" className="project-photo-image" />
+              <span className="project-photo-action" aria-hidden="true">자세히 보기 <span className="round-arrow">↗</span></span>
             </button>
-            <div className="project-meta"><span>{project.category}</span><span className="sample-label">예시</span></div><h3>{project.title}</h3><p>{project.description}</p>
-            <div id={`detail-${project.id}`} hidden={openedProject !== project.id} className="project-detail"><strong>이곳에 담을 내용</strong><p>{project.detail}</p></div>
+            <div className="project-meta"><span>{project.category}</span><span className="sample-label">사진 기록</span></div><h3>{project.title}</h3><p>{project.description}</p>
+            <div id={`detail-${project.id}`} hidden={openedProject !== project.id} className="project-detail"><strong>사진 기록 안내</strong><p>{project.detail}</p></div>
           </article>)}</div>
         </section>
 
