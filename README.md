@@ -1,4 +1,4 @@
-# 세이프마인드 홈페이지
+# SAFEMIND 홈페이지
 
 Next.js + TypeScript로 만든 반응형 한 페이지 프런트엔드 초안입니다.
 
@@ -25,6 +25,8 @@ npm start
 - 키보드 포커스, 본문 바로가기, 모션 감소 설정 지원
 
 ## 브랜드 로고와 연락처
+
+- 최신 표기는 **SAFEMIND**다. 로고: `public/brand/safemind-logo-en.png`. 설명 “안전교육 · AI 활용교육”은 한국어로 유지하며 로고에는 전화번호를 넣지 않는다.
 
 - 확정 브랜드명: 세이프마인드. 최신 이미지 로고는 `public/brand/safemind-logo.png`이며 전화번호를 포함하지 않는다.
 - [세이프마인드 로고 제작 설명·프롬프트](./public/brand/safemind-logo.md)

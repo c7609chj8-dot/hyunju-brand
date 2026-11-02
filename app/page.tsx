@@ -23,7 +23,7 @@ export default function Home() {
     <>
       <a className="skip-link" href="#main">본문으로 이동</a>
       <header className="header">
-        <a className="wordmark" href="#home" aria-label="세이프마인드 홈페이지 처음으로"><BrandLogo /></a>
+        <a className="wordmark" href="#home" aria-label="SAFEMIND 홈페이지 처음으로"><BrandLogo /></a>
         <button className="menu-toggle" aria-expanded={menuOpen} aria-controls="navigation" onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? "닫기" : "메뉴"}</button>
         <nav id="navigation" aria-label="주 메뉴" className={menuOpen ? "navigation is-open" : "navigation"}>
           <a href="#about" onClick={() => setMenuOpen(false)}>소개</a>
@@ -83,7 +83,7 @@ export default function Home() {
           </form>
         </section>
       </main>
-      <footer className="footer"><a href="#home" className="wordmark" aria-label="세이프마인드 홈페이지 처음으로"><BrandLogo /></a><a className="footer-phone" href="tel:+821072592558">전화 010-7259-2558</a><a href="https://github.com/c7609chj8-dot/hyunju-brand" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span><span className="sr-only"> (새 창)</span></a><span>© {new Date().getFullYear()} 세이프마인드</span></footer>
+      <footer className="footer"><a href="#home" className="wordmark" aria-label="SAFEMIND 홈페이지 처음으로"><BrandLogo /></a><a className="footer-phone" href="tel:+821072592558">전화 010-7259-2558</a><a href="https://github.com/c7609chj8-dot/hyunju-brand" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span><span className="sr-only"> (새 창)</span></a><span>© {new Date().getFullYear()} SAFEMIND</span></footer>
     </>
   );
 }

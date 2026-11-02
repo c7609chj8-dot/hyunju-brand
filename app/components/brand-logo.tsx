@@ -11,7 +11,7 @@ export default function BrandLogo() {
         className="brand-symbol"
       />
       <span className="brand-type">
-        <span className="brand-name">세이프마인드</span>
+        <span className="brand-name">SAFEMIND</span>
         <span className="brand-descriptor">안전교육 · AI 활용교육</span>
       </span>
     </span>
