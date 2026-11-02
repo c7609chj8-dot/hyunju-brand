@@ -1,5 +1,7 @@
 # HYUNJU 안전교육 · AI 활용 로고
 
+- 최신 통합 이미지 로고: [v2 이미지](./hyunju-safety-ai-integrated-v2.png), [제작 설명·프롬프트](./integrated-logo-v2.md). 안전·교육·AI를 하나의 심벌로 통합하고 브랜드명·전화번호를 포함한다.
+
 - 파일: `hyunju-safety-ai-symbol.png` — 투명 배경 PNG 심벌.
 - 생성 방식: 내장 image_gen 도구.
 - 의미: 방패는 안전, 열린 책은 교육, 연결점은 AI 활용을 표현한다.
