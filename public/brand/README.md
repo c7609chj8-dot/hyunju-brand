@@ -1,5 +1,7 @@
 # 세이프마인드 브랜드 로고
 
+- 최신 마크: [SM을 통합한 SAFEMIND 로고](./safemind-logo-sm.png), [제작 설명·프롬프트](./safemind-logo-sm.md). 방패·책·AI 회로에 SM 약자를 결합했다.
+
 - 최신 표기: **SAFEMIND**. [영문 브랜드명 로고](./safemind-logo-en.png), [편집 프롬프트](./safemind-logo-en.md). 설명은 한국어로 유지하며 전화번호는 넣지 않는다. 아래 파일들은 이전 버전이다.
 
 - 현재 브랜드명: 세이프마인드.

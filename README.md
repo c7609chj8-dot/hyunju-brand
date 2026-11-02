@@ -26,6 +26,8 @@ npm start
 
 ## 브랜드 로고와 연락처
 
+- 최신 마크: `public/brand/safemind-logo-sm.png`. SM 약자를 방패·책·AI 회로에 통합한 이미지다. [제작 기록](./public/brand/safemind-logo-sm.md)
+
 - 최신 표기는 **SAFEMIND**다. 로고: `public/brand/safemind-logo-en.png`. 설명 “안전교육 · AI 활용교육”은 한국어로 유지하며 로고에는 전화번호를 넣지 않는다.
 
 - 확정 브랜드명: 세이프마인드. 최신 이미지 로고는 `public/brand/safemind-logo.png`이며 전화번호를 포함하지 않는다.
