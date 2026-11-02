@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
+import BrandLogo from "./components/brand-logo";
 
 const projects = [
   { id: "brand", number: "01", category: "BRAND STRATEGY", title: "나다운 방향을 찾는 일", description: "브랜드의 질문에서 시작해, 하나의 메시지로 정리하는 과정.", theme: "sage", word: "Clarity.", detail: "실제 프로젝트로 교체할 예시입니다. 프로젝트의 배경, 해결한 문제, 본인의 역할, 결과를 순서대로 소개하면 좋습니다." },
@@ -22,7 +23,7 @@ export default function Home() {
     <>
       <a className="skip-link" href="#main">본문으로 이동</a>
       <header className="header">
-        <a className="wordmark" href="#home" aria-label="현주 홈페이지 처음으로">HYUNJU<span>.</span></a>
+        <a className="wordmark" href="#home" aria-label="현주 안전교육·AI 활용 홈페이지 처음으로"><BrandLogo /></a>
         <button className="menu-toggle" aria-expanded={menuOpen} aria-controls="navigation" onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? "닫기" : "메뉴"}</button>
         <nav id="navigation" aria-label="주 메뉴" className={menuOpen ? "navigation is-open" : "navigation"}>
           <a href="#about" onClick={() => setMenuOpen(false)}>소개</a>
@@ -73,7 +74,7 @@ export default function Home() {
         </section>
 
         <section id="contact" className="contact section-shell">
-          <div className="contact-copy"><p className="eyebrow">03 / LET’S CONNECT</p><h2>다음 이야기는<br />함께 만들어볼까요?</h2><p>협업 제안부터 가벼운 인사까지.<br />새로운 연결의 시작을 기다립니다.</p><span className="contact-note">문의 폼 미리보기 · 실제 전송 기능은 준비 중입니다.</span></div>
+          <div className="contact-copy"><p className="eyebrow">03 / LET’S CONNECT</p><h2>다음 이야기는<br />함께 만들어볼까요?</h2><p>안전교육·AI 교육에 관해 이야기 나눠요.<br />강의·협업 문의는 전화로 연락해 주세요.</p><a className="contact-phone" href="tel:+821072592558" aria-label="강의·협업 문의 전화 010-7259-2558"><span>강의·협업 문의</span><strong>010-7259-2558</strong></a><span className="contact-note">아래 폼은 미리보기입니다. 실제 문의는 전화로 부탁드립니다.</span></div>
           <form className="contact-form" onSubmit={previewInquiry} onChange={() => setFormMessage("")}>
             <div className="form-row"><label>이름<input name="name" autoComplete="name" placeholder="어떻게 불러드릴까요?" required maxLength={80} /></label><label>이메일<input name="email" type="email" autoComplete="email" placeholder="답변받을 이메일" required maxLength={254} /></label></div>
             <label>나누고 싶은 이야기<textarea name="message" placeholder="어떤 이야기를 함께 나누고 싶으신가요?" required minLength={10} maxLength={3000} rows={4} /></label>
@@ -82,7 +83,7 @@ export default function Home() {
           </form>
         </section>
       </main>
-      <footer className="footer"><a href="#home" className="wordmark">HYUNJU<span>.</span></a><p>나만의 시선으로, 차곡차곡.</p><a href="https://github.com/c7609chj8-dot/hyunju-brand" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span><span className="sr-only"> (새 창)</span></a><span>© {new Date().getFullYear()} HYUNJU</span></footer>
+      <footer className="footer"><a href="#home" className="wordmark" aria-label="현주 안전교육·AI 활용 홈페이지 처음으로"><BrandLogo /></a><a className="footer-phone" href="tel:+821072592558">전화 010-7259-2558</a><a href="https://github.com/c7609chj8-dot/hyunju-brand" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span><span className="sr-only"> (새 창)</span></a><span>© {new Date().getFullYear()} HYUNJU</span></footer>
     </>
   );
 }

@@ -24,6 +24,13 @@ npm start
 - 브라우저 기본 입력 검증 및 문의 입력 확인 메시지
 - 키보드 포커스, 본문 바로가기, 모션 감소 설정 지원
 
+## 브랜드 로고와 연락처
+
+- `public/brand/hyunju-safety-ai-symbol.png`: 안전·교육·AI 연결을 표현하는 투명 PNG 심벌.
+- `app/components/brand-logo.tsx`: 심벌과 HYUNJU, 안전교육·AI 활용 문구를 조합한 웹 로고.
+- 강의·협업 문의: 010-7259-2558. 문의 영역과 푸터에 모바일 전화 링크 적용.
+- [로고 생성 프롬프트와 설명](./public/brand/README.md)
+
 ## 실제 공개 전 교체할 내용
 
 - `app/page.tsx`: 소개, 전문 분야, 실제 포트폴리오, 연락 수단

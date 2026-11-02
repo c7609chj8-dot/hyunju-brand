@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "HYUNJU — 나다운 시선, 의미 있는 연결",
-  description: "현주의 생각과 경험, 그리고 새로운 가능성을 연결하는 개인브랜딩 공간입니다.",
+  title: "HYUNJU — 안전교육 · AI 활용",
+  description: "현주의 안전교육·AI 활용 개인브랜딩 공간입니다. 강의·협업 문의는 010-7259-2558로 연락해 주세요.",
   robots: { index: false, follow: false },
 };
 
